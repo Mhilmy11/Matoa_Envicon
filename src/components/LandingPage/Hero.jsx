@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { MoveRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Container from "../Container";
 
 const heroSlides = [
@@ -97,7 +97,7 @@ export default function Hero() {
               className="mt-7 inline-flex items-center gap-2 bg-primary px-4 py-2.5 text-[11px] font-medium text-white transition-colors duration-300 hover:bg-[#d87924]"
             >
               {activeSlide.buttonText}
-              <ArrowRight size={13} />
+              <MoveRight size={15} />
             </a>
           </div>
 
