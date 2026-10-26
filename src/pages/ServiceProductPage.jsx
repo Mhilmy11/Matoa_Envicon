@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import { MoveRight } from "lucide-react";
 import ProductSection from "../components/ServicePage/ProductSection";
+import ConsulForm from "../components/ServicePage/ConsulForm";
 
 const ourValues = ["Integritas", "Presisi", "Kolaboratif", "Berkelanjutan"];
 
@@ -115,7 +116,29 @@ export default function ServiceProductPage() {
       </div>
 
       <div className=" mb-20">
+        <Container>
+          <div className=" text-center mb-5">
+            <span className="mb-2 block text-[10px] font-semibold tracking-[0.15em] text-neutral">
+              CAKUPAN LAYANAN
+            </span>
+
+            <h2 className="text-2xl font-semibold tracking-tight text-dark sm:text-3xl">
+              Detail Layanan Kami
+            </h2>
+
+            <p className=" text-sm text-neutral pt-2">
+              Tujuh layanan inti untuk mendukung kepatuhan lingkungan usaha Anda
+            </p>
+          </div>
+        </Container>
+
         <ProductSection />
+      </div>
+
+      <div className=" bg-light py-10">
+        <Container>
+          <ConsulForm />
+        </Container>
       </div>
     </div>
   );
