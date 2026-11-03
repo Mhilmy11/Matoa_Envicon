@@ -55,7 +55,7 @@ export default function AboutUsPage() {
 
       <div className="w-full bg-light py-12 my-12">
         <Container>
-          <div className=" grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-12 lg:gap-20">
+          <div className=" grid grid-cols-1 items-start gap-10 md:grid-cols-2 md:gap-12 lg:gap-20">
             <div className="w-full">
               <span className="mb-2 block text-[9px] font-medium uppercase tracking-wide text-neutral">
                 PT Matoa Envicon

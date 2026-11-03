@@ -25,7 +25,7 @@ function App() {
 
           <Route path="/serviceproducts" element={<ServiceProductPage />} />
           <Route
-            path="/serviceproducts/detail-service"
+            path="/serviceproducts/servicename"
             element={<DetailServicePage />}
           />
 

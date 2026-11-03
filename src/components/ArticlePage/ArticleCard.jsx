@@ -42,13 +42,11 @@ export default function ArticleCard() {
           key={i}
           className=" bg-white border border-near px-4 py-2 rounded-lg"
         >
-          <div>
-            <img
-              src={item.image}
-              alt={item.title}
-              className=" h-[180px] object-cover object-top w-full"
-            />
-          </div>
+          <img
+            src={item.image}
+            alt={item.title}
+            className=" h-[180px] object-cover object-top w-full"
+          />
 
           <div className=" pt-3 space-y-14">
             <h1 className=" text-sm font-semibold">{item.title}</h1>

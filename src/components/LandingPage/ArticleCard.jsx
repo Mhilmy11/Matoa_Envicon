@@ -26,28 +26,32 @@ export default function ArticleCard() {
     <>
       <div className=" grid grid-cols-1 md:grid-cols-3 gap-5">
         {Article.map((item, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-md">
+          <div
+            key={index}
+            className="bg-white rounded-lg shadow-md flex flex-col h-full"
+          >
             <img
               src={item.image}
               alt={item.title}
               className="w-full max-h-24 object-cover rounded-t-md"
             />
-            <div className="mt-1 p-4">
-              <span className="bg-secondary text-dark text-xs font-semibold px-5 py-1 rounded-full">
+
+            <div className="flex flex-col flex-1 px-3 pt-3">
+              <span className="bg-secondary w-fit text-dark text-xs font-semibold px-5 py-1 rounded-full">
                 {item.articleType}
               </span>
-              <h3 className="text-lg font-bold mt-2">{item.title}</h3>
+              <h3 className=" font-bold mt-2">{item.title}</h3>
               <p className="text-neutral mt-1 text-xs">{item.date}</p>
-            </div>
 
-            <div className="flex justify-center p-4">
-              <a
-                href="/articles"
-                className=" flex items-center gap-1 bg-primary text-sm font-semibold rounded-md px-10 py-2"
-              >
-                <p>Baca Artikel</p>
-                <ArrowRight size={12} />
-              </a>
+              <div className="flex justify-center py-5">
+                <a
+                  href="/articles"
+                  className=" flex items-center gap-1 bg-primary text-sm font-semibold rounded-md px-10 py-2"
+                >
+                  <p>Baca Artikel</p>
+                  <ArrowRight size={12} />
+                </a>
+              </div>
             </div>
           </div>
         ))}
