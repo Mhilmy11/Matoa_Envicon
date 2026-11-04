@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import { MoveRight } from "lucide-react";
-import ProductSection from "../components/ServicePage/ProductSection";
+import ProductCard from "../components/ServicePage/ProductCard";
 import ConsulForm from "../components/ServicePage/ConsulForm";
 
 export default function DetailServicePage() {
@@ -86,7 +86,7 @@ export default function DetailServicePage() {
           </div>
         </Container>
 
-        <ProductSection />
+        <ProductCard />
       </div>
 
       <div className=" bg-light py-10">

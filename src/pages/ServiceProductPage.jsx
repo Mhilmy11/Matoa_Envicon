@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import { MoveRight } from "lucide-react";
-import ProductSection from "../components/ServicePage/ProductSection";
+import ServiceCard from "../components/ServicePage/ServiceCard";
 import ConsulForm from "../components/ServicePage/ConsulForm";
 
 const ourValues = ["Integritas", "Presisi", "Kolaboratif", "Berkelanjutan"];
@@ -132,7 +132,7 @@ export default function ServiceProductPage() {
           </div>
         </Container>
 
-        <ProductSection />
+        <ServiceCard />
       </div>
 
       <div className=" bg-light py-10">

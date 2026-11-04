@@ -11,6 +11,7 @@ import ServiceProductPage from "./pages/ServiceProductPage";
 import ArticlePage from "./pages/ArticlePage";
 import DetailServicePage from "./pages/DetailServicePage";
 import DetailArticlePage from "./pages/DetailArticlePage";
+import DetailServiceProduct from "./pages/DetailServiceProduct";
 
 function App() {
   return (
@@ -23,10 +24,11 @@ function App() {
           {/* <Route path="/" element={<UndermaintenancePage />} /> */}
           <Route path="/aboutus" element={<AboutUsPage />} />
 
-          <Route path="/serviceproducts" element={<ServiceProductPage />} />
+          <Route path="/service" element={<ServiceProductPage />} />
+          <Route path="/service/service-name" element={<DetailServicePage />} />
           <Route
-            path="/serviceproducts/servicename"
-            element={<DetailServicePage />}
+            path="/service/service-name/detail-product"
+            element={<DetailServiceProduct />}
           />
 
           <Route path="/article" element={<ArticlePage />} />

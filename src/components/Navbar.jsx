@@ -6,7 +6,7 @@ import { Phone, Mail, Menu, X } from "lucide-react";
 const navItems = [
   { name: "Beranda", path: "/" },
   { name: "Tentang", path: "/aboutus" },
-  { name: "Layanan", path: "/serviceproducts" },
+  { name: "Layanan", path: "/service" },
   { name: "Proyek", path: "/project" },
   { name: "Artikel", path: "/article" },
   { name: "Kontak", path: "/contact" },

@@ -5,22 +5,22 @@ import { Link } from "react-router-dom";
 const ourService = [
   {
     image: "/assets/images/service-image-1.png",
-    title: "AMDAL",
+    title: "Analisis Mengenai Dampak Lingkungan",
     desc: "PT Matoa Envicon adalah konsultan lingkungan yang membantu pelaku usaha & instansi memenuhi kewajiban perizinan lingkungan dari kajian teknis hingga pengurusan izin resmi,",
   },
   {
     image: "/assets/images/service-image-2.png",
-    title: "UKL-UPL",
+    title: "Upaya Pengelolaan dan Pemantauan Lingkungan",
     desc: "PT Matoa Envicon adalah konsultan lingkungan yang membantu pelaku usaha & instansi memenuhi kewajiban perizinan lingkungan dari kajian teknis hingga pengurusan izin resmi,",
   },
   {
     image: "/assets/images/service-image-3.png",
-    title: "Pertek (Emisi/BMAL/Rintek TPS LB3)",
+    title: "Surat Pernyataan Kesanggupan Pengelolaan Lingkungan",
     desc: "PT Matoa Envicon adalah konsultan lingkungan yang membantu pelaku usaha & instansi memenuhi kewajiban perizinan lingkungan dari kajian teknis hingga pengurusan izin resmi,",
   },
 ];
 
-export default function ProductSection() {
+export default function ProductCard() {
   return (
     <Container>
       <div className="pt-10 grid grid-cols-1 md:grid-cols-3 gap-5 items-stretch">
@@ -40,7 +40,7 @@ export default function ProductSection() {
               </p>
 
               <Link
-                to="/serviceproducts/servicename"
+                to="/service/service-name/detail-product"
                 className="flex items-center gap-1 text-sm font-semibold hover:underline mt-auto pt-8 w-fit"
               >
                 <span>Pelajari Lebih Lanjut</span>
